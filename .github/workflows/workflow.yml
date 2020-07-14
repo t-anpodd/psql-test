@@ -7,5 +7,5 @@ jobs:
     - uses: Azure/login@master
       with:
         creds: {{SECRETS.AZURE_CREDENTIALS}}
-      id:
+      id: login
     - run: echo "Filler output"
