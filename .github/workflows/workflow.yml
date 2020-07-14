@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: Azure/login@master
       with:
-        creds: {{SECRETS.AZURE_CREDENTIALS}}
+        creds: ${{secrets.AZURE_CREDENTIALS}}
       id: login
     - run: echo "Filler output"
