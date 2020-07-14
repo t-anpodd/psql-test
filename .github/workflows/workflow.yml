@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  az-login:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Azure/login@master
+      with:
+        creds: {{SECRETS.AZURE_CREDENTIALS}}
+      id:
+    - run: echo "Filler output"
