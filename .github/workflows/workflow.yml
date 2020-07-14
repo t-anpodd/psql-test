@@ -4,7 +4,7 @@ jobs:
   az-login:
     runs-on: ubuntu-latest
     steps:
-    - uses: Azure/login@master
+    - uses: Azure/login@v1
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
       id: login
