@@ -13,7 +13,7 @@ jobs:
   resmanager:
     runs-on: ubuntu-latest
     steps:
-    - uses: t-anpodd/psql-test@master
+    - uses: t-anpodd/postgresql-action@master
       with:
         connection-string: "host=new-server.postgres.database.azure.com port=5432 dbname={your_database} user=anishpoddar2307@new-server password={your_password} sslmode=require"
         sqlfile: 'sql[0-9]\.sql'
